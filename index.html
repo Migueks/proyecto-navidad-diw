@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Showcase CSS Profesional | Miguel López-Herrero</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%236366f1'>◇</text></svg>"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="top">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="brand" href="#top" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">◇</span>
+          <span class="brand__name">CSS Showcase</span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a class="nav__link" href="#hero">Inicio</a>
+          <a class="nav__link" href="#animaciones">Laboratorio</a>
+          <a class="nav__link" href="#showcase">Galería</a>
+          <a class="btn btn--primary btn--sm" href="#contacto">Contacto</a>
+        </nav>
+
+        <label
+          for="nav-toggle"
+          class="nav-toggle-label"
+          aria-label="Abrir menú"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="hero" class="hero">
+        <div class="hero__bg"></div>
+        <div class="wrap hero__inner">
+          <span class="hero__tag">Portfolio DIW</span>
+          <h1 class="hero__title">
+            Diseño Web <br />
+            <span class="text-gradient">Avanzado</span>
+          </h1>
+          <p class="hero__desc">
+            Mostrando las capacidades modernas de CSS: layouts fluidos,
+            animaciones performantes y efectos visuales de alto impacto.
+          </p>
+          <div class="hero__actions">
+            <a href="#animaciones" class="btn btn--primary">
+              Ver Animaciones <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#stack" class="btn btn--ghost">Ver Stack</a>
+          </div>
+        </div>
+        <img src="img/skyline.png" alt="" class="hero__skyline" />
+      </section>
+
+      <section id="features" class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Dominio Técnico</h2>
+            <p>Pilares fundamentales del desarrollo frontend moderno.</p>
+          </div>
+
+          <div class="grid-features">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>HTML5 Semántico</h3>
+              <p>Estructura accesible y optimizada para SEO.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3>CSS Next-Gen</h3>
+              <p>Variables, Grid, Flexbox y mix-blend-mode.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3>Responsive</h3>
+              <p>Adaptabilidad total a todo tipo de pantallas.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="animaciones" class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Laboratorio de Animación</h2>
+            <p>Ejemplos prácticos de <code>@keyframes</code> complejos.</p>
+          </div>
+
+          <div class="grid-features">
+            <section class="card" aria-labelledby="c2">
+              <header class="card__header">
+                <h3 id="c2">
+                  <i class="fa-solid fa-atom" aria-hidden="true"></i>
+                  Orbital
+                </h3>
+                <p class="card__sub">Rotación compuesta</p>
+              </header>
+
+              <div class="card__body">
+                <div class="orbit" aria-hidden="true">
+                  <span class="orbit__dot"></span>
+                  <span class="orbit__dot orbit__dot--b"></span>
+                </div>
+                <p class="muted">
+                  Animación infinita calculando coordenadas polares simuladas
+                  con transform.
+                </p>
+              </div>
+            </section>
+
+            <section class="card" aria-labelledby="c3">
+              <header class="card__header">
+                <h3 id="c3">
+                  <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+                  Sonar
+                </h3>
+                <p class="card__sub">Escala y Opacidad</p>
+              </header>
+
+              <div class="card__body">
+                <div class="pulse-container" aria-hidden="true">
+                  <div class="pulse-circle"></div>
+                  <div class="pulse-circle delay"></div>
+                  <i class="fa-solid fa-wifi pulse-icon"></i>
+                </div>
+                <p class="muted">
+                  Efecto de onda expansiva usando múltiples capas y retrasos de
+                  animación.
+                </p>
+              </div>
+            </section>
+
+            <section class="card" aria-labelledby="c4">
+              <header class="card__header">
+                <h3 id="c4">
+                  <i class="fa-solid fa-ghost" aria-hidden="true"></i>
+                  Levitación
+                </h3>
+                <p class="card__sub">Translate Y + Sombra</p>
+              </header>
+
+              <div class="card__body">
+                <div class="float-container" aria-hidden="true">
+                  <div class="float-element">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="float-shadow"></div>
+                </div>
+                <p class="muted">
+                  Simulación de gravedad cero moviendo el objeto y escalando su
+                  sombra.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="blend-section">
+        <div class="wrap blend-inner">
+          <div class="blend-text-box">
+            <h2 class="blend-title">IMPACT</h2>
+            <p>
+              Efecto Visual usando CSS <code>mix-blend-mode: multiply</code>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="section bg-darker">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Stack Tecnológico</h2>
+            <p>Herramientas utilizadas en el desarrollo.</p>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-badge">
+              <i class="fa-brands fa-html5"></i> HTML5
+            </div>
+            <div class="tech-badge">
+              <i class="fa-brands fa-css3-alt"></i> CSS3
+            </div>
+            <div class="tech-badge">
+              <i class="fa-solid fa-box-open"></i> Grid / Flexbox
+            </div>
+            <div class="tech-badge">
+              <i class="fa-brands fa-git-alt"></i> Git
+            </div>
+            <div class="tech-badge">
+              <i class="fa-solid fa-universal-access"></i> A11Y
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="showcase" class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Galería Visual</h2>
+            <p>Pasa el ratón para más.</p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item">
+              <img src="img/image2.jpg" alt="Detalle navideño" loading="lazy" />
+              <figcaption class="gallery-caption">
+                <h3>Composición</h3>
+                <p>Macrofotografía y detalle.</p>
+              </figcaption>
+            </figure>
+            <figure class="gallery-item item-wide">
+              <img
+                src="img/background1.jpg"
+                alt="Ambiente general"
+                loading="lazy"
+              />
+              <figcaption class="gallery-caption">
+                <h3>Atmósfera</h3>
+                <p>Iluminación y profundidad.</p>
+              </figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/image3.jpg" alt="Luces bokeh" loading="lazy" />
+              <figcaption class="gallery-caption">
+                <h3>Efectos de Luz</h3>
+                <p>Bokeh y alto contraste.</p>
+              </figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/background6.jpg" alt="Paraguas" loading="lazy" />
+              <figcaption class="gallery-caption">
+                <h3>Reflejos Urbanos</h3>
+                <p>Texturas y atmósfera.</p>
+              </figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="img/background5.jpg"
+                alt="Globo terráqueo"
+                loading="lazy"
+              />
+              <figcaption class="gallery-caption">
+                <h3>Global</h3>
+                <p>Diseño internacional.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section" id="contacto">
+        <div class="wrap cta__inner">
+          <h2>¿Hablamos?</h2>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="mailto:lhlmiguel@gmail.com">
+              <i class="fa-solid fa-envelope"></i> Contactar
+            </a>
+            <a class="btn btn--ghost" href="#" target="_blank">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-col brand-col">
+          <a class="brand" href="#top">
+            <span class="brand__mark">◇</span>
+            <span class="brand__name">CSS Showcase</span>
+          </a>
+          <p class="footer-desc">Proyecto académico 2025.</p>
+        </div>
+        <div class="footer-col links-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#animaciones">Animaciones</a></li>
+            <li><a href="#showcase">Galería</a></li>
+            <li><a href="#stack">Tecnologías</a></li>
+          </ul>
+        </div>
+        <div class="footer-col social-col">
+          <h4>Social</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>© 2025 Miguel López-Herrero</p>
+        <a class="back-to-top" href="#top"
+          >Subir <i class="fa-solid fa-arrow-up"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
